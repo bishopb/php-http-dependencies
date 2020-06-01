@@ -1,7 +1,6 @@
 # Dependencies from URL
 
-Based on an article about [Deno dependencies](https://kitsonkelly.com/posts/deno-is-a-browser-for-code/), this repo
-demonstrates that PHP may use URL, versioned or not, as dependency endpoints.
+Based on an article about [Deno dependencies][1], this repo demonstrates that PHP may use URL, versioned or not, as dependency endpoints.
 
 ```php
 $v4 = require 'https://raw.githubusercontent.com/bishopb/php-http-dependencies/1.0.0/src/Uuid/v4.php';
@@ -14,3 +13,5 @@ One could build, from this, an entire dependency management system. For it to be
 * A means to scan a code base and produce a dependency list
   * A means to generate a dependency graph, in such a way as to not crawl the Internet
 * A collection of registries to facilitate package discovery
+
+[1]: https://kitsonkelly.com/posts/deno-is-a-browser-for-code/
